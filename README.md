@@ -35,7 +35,7 @@ Open any `.html` file in a text editor (like VS Code, Notepad, or TextEdit). Loo
 ```
 
 ### 2. Updating the Photography Gallery
-1.  Place your photo files in the `public/` folder (or create a new `images` folder inside it).
+1.  Place your photo files in an `images/` folder at the repository root.
 2.  Open `src/pages/photography.html`.
 3.  Replace the placeholder `div`s with `img` tags:
 
@@ -45,9 +45,11 @@ Open any `.html` file in a text editor (like VS Code, Notepad, or TextEdit). Loo
 
 <!-- ADD THIS: -->
 <div class="photo-item">
-    <img src="/images/my-photo.jpg" alt="Description of photo" loading="lazy">
+    <img src="../../images/my-photo.jpg" alt="Description of photo" width="1500" height="1000" loading="lazy">
 </div>
 ```
+
+The gallery uses two columns on narrower screens and three columns from 900px wide. Photos keep their original proportions without cropping: landscape 3:2 and portrait 2:3 images can sit together in a masonry-style layout. Set each image's `width` and `height` attributes to its actual dimensions to reserve the right amount of space while it loads. The `portrait` class only changes the placeholder's ratio; real images do not need an orientation class or inline sizing styles.
 
 ### 3. Adding Data Science and Sports Analytics Projects
 Open `src/pages/technical.html`. Copy and paste the `<div class="project-card">...</div>` block to create a new entry.
@@ -110,5 +112,5 @@ The site is prepared for publication from the `main` branch, `/(root)` directory
 - Website address: https://terreturn.github.io/youcheng-song/
 - In repository Settings → Pages, choose **Deploy from a branch**, **main**, and **/(root)**.
 - After Pages is enabled, pushing changes to `main` automatically updates the website.
-- For this direct deployment, put images in an `images/` folder at the repository root. From either page in `src/pages/`, reference them as `../../images/photo.jpg` so the repository subpath is preserved. The `public/` examples above apply to Vite development and builds.
+- For this direct deployment, put images in an `images/` folder at the repository root. From pages in `src/pages/`, reference them as `../../images/photo.jpg` so the repository subpath is preserved.
 - Photography currently contains placeholders. Data science and sports analytics projects are marked as coming soon until real project details are supplied.
