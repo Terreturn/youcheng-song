@@ -138,6 +138,28 @@ button {
     color: var(--color-text-primary);
 }
 
+@media (max-width: 560px) {
+    .header {
+        height: 76px;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: 100%;
+        max-width: 400px;
+        gap: var(--spacing-xs) var(--spacing-md);
+    }
+
+    .nav-link {
+        padding: 3px 0;
+    }
+
+    .nav-link:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
 /* Animations */
 .fade-in-up {
     opacity: 0;

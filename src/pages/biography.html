@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Youcheng Song: photography, data science, and sports analytics." />
+    <title>Biography | Youcheng Song</title>
+    <link rel="stylesheet" href="../styles/base.css" />
+    <style>
+        .biography-card {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+            gap: var(--spacing-2xl);
+            margin-top: var(--spacing-xl);
+            padding: var(--spacing-2xl);
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .profile {
+            border-right: 1px solid var(--color-divider);
+            padding-right: var(--spacing-xl);
+        }
+
+        .profile-monogram {
+            display: grid;
+            place-items: center;
+            width: 88px;
+            height: 88px;
+            margin-bottom: var(--spacing-lg);
+            border-radius: var(--radius-full);
+            background: var(--color-bg);
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-semibold);
+            letter-spacing: -0.03em;
+        }
+
+        .profile h2,
+        .biography-copy h2 {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .profile p {
+            color: var(--color-text-secondary);
+            font-size: var(--font-size-sm);
+            line-height: 1.8;
+        }
+
+        .biography-copy p {
+            line-height: 1.8;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .biography-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-md) var(--spacing-lg);
+            margin-top: var(--spacing-xl);
+            font-size: var(--font-size-sm);
+        }
+
+        @media (max-width: 680px) {
+            .biography-card {
+                grid-template-columns: minmax(0, 1fr);
+                gap: var(--spacing-lg);
+                padding: var(--spacing-lg);
+            }
+
+            .profile {
+                border-right: 0;
+                border-bottom: 1px solid var(--color-divider);
+                padding-right: 0;
+                padding-bottom: var(--spacing-lg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav" aria-label="Primary navigation">
+            <a href="../../index.html" class="nav-link">Home</a>
+            <a href="biography.html" class="nav-link active" aria-current="page">Biography</a>
+            <a href="photography.html" class="nav-link">Photography</a>
+            <a href="technical.html" class="nav-link">Data Science and Sports Analytics</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="text-title fade-in-up">Biography.</h1>
+                <p class="text-subtitle fade-in-up delay-100">A little about me.</p>
+
+                <div class="biography-card fade-in-up delay-200">
+                    <div class="profile">
+                        <div class="profile-monogram" aria-hidden="true">YS</div>
+                        <h2>Youcheng Song</h2>
+                        <p>Photography<br>Data Science<br>Sports Analytics</p>
+                    </div>
+
+                    <section class="biography-copy" aria-labelledby="about-heading">
+                        <h2 id="about-heading">About me</h2>
+                        <!-- Replace these paragraphs with your full biography when ready. -->
+                        <p>I'm Youcheng Song. Welcome to my personal website, a space for photography, data science, and sports analytics.</p>
+                        <p class="text-body">More about my background and journey will be shared here soon.</p>
+                        <div class="biography-links">
+                            <a href="photography.html">Explore Photography &rarr;</a>
+                            <a href="technical.html">Explore Data Science and Sports Analytics &rarr;</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

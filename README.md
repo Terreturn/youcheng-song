@@ -1,6 +1,6 @@
 # Youcheng Song — Personal Website
 
-Youcheng Song’s personal website, built with HTML, CSS, and optional Vite development tools. The two sections are Photography and Data Science and Sports Analytics.
+Youcheng Song’s personal website, built with HTML, CSS, and optional Vite development tools. The three sections are Biography, Photography, and Data Science and Sports Analytics.
 
 ## 📂 Project Structure
 
@@ -9,6 +9,7 @@ personal-website/
 ├── index.html              # Home page
 ├── src/
 │   ├── pages/
+│   │   ├── biography.html   # Personal biography
 │   │   ├── photography.html # Photography gallery
 │   │   └── technical.html   # Data science and sports analytics projects
 │   ├── styles/
@@ -74,6 +75,9 @@ All design settings are stored in **`src/styles/variables.css`**.
 *   **To change the background color:** Edit `--color-bg`.
 *   **To change the accent color (links/buttons):** Edit `--color-accent`.
 *   **To change fonts:** Edit `--font-family-base`.
+
+### 5. Updating the Biography
+Open `src/pages/biography.html` and edit the text in the **About me** section. Replace the short introduction and the placeholder paragraph with your biography, education, experience, and interests. The page currently uses only Youcheng Song's name and the site's existing subject areas; no academic or professional history has been added.
 
 ---
 
