@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta name="description" content="Youcheng Song's personal website: photography, data science, and sports analytics." />
+    <title>Youcheng Song | Photography, Data Science and Sports Analytics</title>
     <link rel="stylesheet" href="src/styles/base.css" />
   </head>
   <body>
@@ -13,19 +13,19 @@
       <nav class="nav">
         <a href="index.html" class="nav-link active">Home</a>
         <a href="src/pages/photography.html" class="nav-link">Photography</a>
-        <a href="src/pages/technical.html" class="nav-link">Technical</a>
+        <a href="src/pages/technical.html" class="nav-link">Data Science and Sports Analytics</a>
       </nav>
     </header>
 
     <main>
       <section class="section">
         <div class="container text-center">
-          <h1 class="text-display fade-in-up">Clean.<br>Simple.<br>Impactful.</h1>
+          <h1 class="text-display fade-in-up">Youcheng<br>Song</h1>
           <p class="text-subtitle fade-in-up delay-100" style="margin-top: var(--spacing-lg);">
-            Welcome to my digital space. I bridge the gap between<br>visual storytelling and technical engineering.
+            Welcome to my personal space.<br>Photography, data science, and sports analytics.
           </p>
           
-          <div class="fade-in-up delay-200" style="margin-top: var(--spacing-2xl); display: flex; justify-content: center; gap: var(--spacing-md);">
+          <div class="home-links fade-in-up delay-200">
             <a href="src/pages/photography.html" class="card-link">
               <div class="card">
                 <h3>Photography</h3>
@@ -34,7 +34,7 @@
             </a>
             <a href="src/pages/technical.html" class="card-link">
               <div class="card">
-                <h3>Engineering</h3>
+                <h3>Data Science and Sports Analytics</h3>
                 <span>View Projects &rarr;</span>
               </div>
             </a>
@@ -45,12 +45,21 @@
 
     <!-- Simple Card Styles Inline for now (or move to base) -->
     <style>
+      .home-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+        gap: var(--spacing-md);
+        max-width: 640px;
+        margin: var(--spacing-2xl) auto 0;
+      }
+
       .card {
         background: var(--color-surface);
         padding: var(--spacing-xl);
         border-radius: var(--radius-lg);
         box-shadow: var(--shadow-sm);
-        width: 300px;
+        width: 100%;
+        height: 100%;
         text-align: left;
         transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
         border: 1px solid var(--color-border);

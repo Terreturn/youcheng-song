@@ -119,7 +119,10 @@ button {
 
 .nav {
     display: flex;
-    gap: var(--spacing-lg);
+    gap: clamp(var(--spacing-sm), 3vw, var(--spacing-lg));
+    align-items: center;
+    max-width: 100%;
+    padding: 0 var(--spacing-md);
 }
 
 .nav-link {
@@ -127,6 +130,7 @@ button {
     color: var(--color-text-secondary);
     transition: color var(--transition-fast);
     text-decoration: none !important;
+    text-align: center;
 }
 
 .nav-link:hover,

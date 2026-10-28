@@ -1,6 +1,6 @@
-# Personal Website (Apple-Inspired Aesthetic)
+# Youcheng Song — Personal Website
 
-A clean, minimalist personal website template built with HTML, CSS, and Vite. Designed to separate creative work (Photography) from professional engineering projects (Technical).
+Youcheng Song’s personal website, built with HTML, CSS, and optional Vite development tools. The two sections are Photography and Data Science and Sports Analytics.
 
 ## 📂 Project Structure
 
@@ -10,7 +10,7 @@ personal-website/
 ├── src/
 │   ├── pages/
 │   │   ├── photography.html # Photography gallery
-│   │   └── technical.html   # Technical projects list
+│   │   └── technical.html   # Data science and sports analytics projects
 │   ├── styles/
 │   │   ├── base.css        # Global styles and resets
 │   │   └── variables.css   # Colors, fonts, and design tokens
@@ -28,7 +28,7 @@ Open any `.html` file in a text editor (like VS Code, Notepad, or TextEdit). Loo
 **Example (index.html):**
 ```html
 <!-- Change specific text -->
-<h1 class="text-display fade-in-up">Clean. Simple. Impactful.</h1>
+<h1 class="text-display fade-in-up">Youcheng<br>Song</h1>
 <!-- To: -->
 <h1 class="text-display fade-in-up">John Doe.<br>Developer.<br>Creator.</h1>
 ```
@@ -48,7 +48,7 @@ Open any `.html` file in a text editor (like VS Code, Notepad, or TextEdit). Loo
 </div>
 ```
 
-### 3. Adding Technical Projects
+### 3. Adding Data Science and Sports Analytics Projects
 Open `src/pages/technical.html`. Copy and paste the `<div class="project-card">...</div>` block to create a new entry.
 
 ```html
@@ -97,3 +97,14 @@ If you want to use the modern development tools (hot-reloading, optimization):
     ```bash
     npm run build
     ```
+
+
+## GitHub Pages
+
+The site is prepared for publication from the `main` branch, `/(root)` directory of `Terreturn/personal-webpage-framework`. The `.nojekyll` file lets GitHub Pages serve the HTML and CSS directly; no Node.js build is required for this deployment.
+
+- Website address: https://terreturn.github.io/personal-webpage-framework/
+- In repository Settings → Pages, choose **Deploy from a branch**, **main**, and **/(root)**.
+- After Pages is enabled, pushing changes to `main` automatically updates the website.
+- For this direct deployment, put images in an `images/` folder at the repository root. From either page in `src/pages/`, reference them as `../../images/photo.jpg` so the repository subpath is preserved. The `public/` examples above apply to Vite development and builds.
+- Photography currently contains placeholders. Data science and sports analytics projects are marked as coming soon until real project details are supplied.
