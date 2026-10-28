@@ -105,9 +105,9 @@ If you want to use the modern development tools (hot-reloading, optimization):
 
 ## GitHub Pages
 
-The site is prepared for publication from the `main` branch, `/(root)` directory of `Terreturn/personal-webpage-framework`. The `.nojekyll` file lets GitHub Pages serve the HTML and CSS directly; no Node.js build is required for this deployment.
+The site is prepared for publication from the `main` branch, `/(root)` directory of `Terreturn/youcheng-song`. The `.nojekyll` file lets GitHub Pages serve the HTML and CSS directly; no Node.js build is required for this deployment.
 
-- Website address: https://terreturn.github.io/personal-webpage-framework/
+- Website address: https://terreturn.github.io/youcheng-song/
 - In repository Settings → Pages, choose **Deploy from a branch**, **main**, and **/(root)**.
 - After Pages is enabled, pushing changes to `main` automatically updates the website.
 - For this direct deployment, put images in an `images/` folder at the repository root. From either page in `src/pages/`, reference them as `../../images/photo.jpg` so the repository subpath is preserved. The `public/` examples above apply to Vite development and builds.
